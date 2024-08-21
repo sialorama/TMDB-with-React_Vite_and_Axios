@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from "react";
+import react, { useEffect, useState} from "react";
 import axios from "axios";
 
-function MovieList() {
-    const [movies, setMovies] = useState([]);
+function UpcomingList () {
+    const [movies, setUpcoming] = useState([]);
     const apiKey = import.meta.env.VITE_TMDB_API_KEY;
 
     useEffect(() => {
-        // Fetch popular movies from TMDB
+        // fetch upcoming movies from TMDB
         axios
-            .get(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`)
-            .then((response) => {
-                setMovies(response.data.results); // Set the movie data
-            })
-            .catch((error) => {
-                console.error("Error fetching data:", error);
-            });
+        .get(`https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}&language=en-US&page=1`)
+        .then((Response) => {
+            setUpcoming(Response.data.results); // Set upcoming movies data
+        })
+        .catch ((error) => {
+            console.error("Error fetching data:", error);
+        });
     }, [apiKey]);
 
     return (
         <div>
-            <h1>Films Populaires</h1>
-            <div style={{ display: "flex", flexWrap: "wrap" }}>
+            <h1>Sorties prochaines</h1>
+            <div style={{display: "flex", flexWrap: "wrap"}}>
                 {movies.map((movie) => (
                     <div key={movie.id} style={{ margin: "20px" }}>
                         <img
@@ -37,4 +37,4 @@ function MovieList() {
     );
 }
 
-export default MovieList;
+export default UpcomingList;
