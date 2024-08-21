@@ -8,10 +8,9 @@ L'application est rapide et réactive grâce à Vite, et est conçue pour être 
   
 ## Installation:
 1. **Clonez le dépôt et naviguez jusqu'au répertoire du projet.**  
-```
-$ git clone https://github.com/sialorama/TMDB-with-React_Vite_and_Axios.git
-```  
-2. **Exécutez la commande ```$ npm install``` pour installer les dépendances du projet.**  
-3. **Utilisez la commande ```$ npm run dev``` pour démarrer le serveur de développement et prévisualiser l'application en local.**
+``` $ git clone https://github.com/sialorama/TMDB-with-React_Vite_and_Axios.git ```  
+2. **Exécutez la commande ```$ npm install``` pour installer les dépendances du projet.**
+3. **Installez Axios ```$ npm install axios``` pour effectuer des appels API vers TMDB.
+4. **Utilisez la commande ```$ npm run dev``` pour démarrer le serveur de développement et prévisualiser l'application en local.**
 
 Have fun !
