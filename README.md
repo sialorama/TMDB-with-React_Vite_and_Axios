@@ -11,5 +11,7 @@ L'application est rapide et réactive grâce à Vite, et est conçue pour être 
 ```
 $ git clone https://github.com/sialorama/TMDB-with-React_Vite_and_Axios.git
 ```  
-2. **Exécutez npm install pour installer les dépendances du projet.**  
-3. **Utilisez npm run dev pour démarrer le serveur de développement et prévisualiser l'application en local.**  
+2. **Exécutez la commande ```$ npm install``` pour installer les dépendances du projet.**  
+3. **Utilisez la commande ```$ npm run dev``` pour démarrer le serveur de développement et prévisualiser l'application en local.**
+
+Have fun !
