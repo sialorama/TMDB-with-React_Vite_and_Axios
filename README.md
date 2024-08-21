@@ -16,8 +16,8 @@ L'application est rapide et réactive grâce à Vite, et est conçue pour être 
 
 ## Preview
 
-![movies.png](./src\imgs\films.png)
+![movies.png](./src/imgs/films.png "movies")
 
-![upcoming.png](./src\imgs.upcoming.png)
+![upcoming.png](./src/imgs/upcoming.png "upcoming")
 
 Have fun !
